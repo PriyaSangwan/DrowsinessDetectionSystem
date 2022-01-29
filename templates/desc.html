@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+{% block content %}
+<script type="text/javascript">
+var intervalID = setInterval(update_values,100);
+    function update_values() {
+        $.getJSON($SCRIPT_ROOT + '/update',
+
+      function(data) {
+        $('#status').text(data.var[0]);
+        $('#sleep_count').text(data.var[1]);
+      });
+
+    };
+
+</script>
+<div class="row" onload="update_values()">
+<div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+<div class="icon-box">
+<div class="icon"><i class="bx bxl-dribbble"></i></div>
+<h4 class="title"><a href="">Status</a></h4>
+<p class="description">
+    <span id="status">?</span>
+    <script>
+        document.getElementById("status").innerHTML;
+    </script>
+</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+<div class="icon-box">
+<div class="icon"><i class="bx bx-file"></i></div>
+<h4 class="title"><a href="">Average Sleeping Times</a></h4>
+<p class="description">
+    <span id="sleep_count">?</span>
+    <script>
+        document.getElementById("sleep_count").innerHTML;
+    </script> secs
+</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+<div class="icon-box">
+<div class="icon"><i class="bx bx-tachometer"></i></div>
+<h4 class="title"><a href="">Threat Level</a></h4>
+<p class="description">ghoor sankat
+              </p>
+</div>
+</div>
+<!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div> -->
+</div>
+{% endblock %}

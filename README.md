@@ -195,17 +195,5 @@ Data Set Name- Closed Eyes in The Wild
 ![image](https://user-images.githubusercontent.com/79904688/172585637-5b595da6-807e-4326-999a-07865bb7b28c.png)
 
 
-* Result with Drowsy Status
 
-![image](https://user-images.githubusercontent.com/79904688/172585706-7309f8a7-1fcc-4be0-bf08-15a61b531674.png)
-
-
-* Result with Active Status
-
-![image](https://user-images.githubusercontent.com/79904688/172585759-4adce167-8dcd-4afa-b545-27e98fff14c0.png)
-
-
-* Result with Sleeping Status
-
-![image](https://user-images.githubusercontent.com/79904688/172585808-5f01d429-5b48-4588-859e-8ad82dc6ebfb.png)
 
